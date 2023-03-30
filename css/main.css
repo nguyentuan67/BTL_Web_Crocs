@@ -156,12 +156,12 @@ header {
 }
 
 /* banner */
-.banner-1 {
+.banner.sale {
   height: 245px;
   margin-bottom: 6px;
 }
 
-.banner-2 {
+.banner.ads {
   height: 562x;
 }
 
@@ -195,4 +195,49 @@ header {
   font-weight: 700;
 }
 
+.nav-btn a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.cate {
+  display: block;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 10px;
+  height: 100%;
+}
+
+.cate img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255,255,255,.8);
+  padding: 3px 8px;
+  width: 100%;
+}
+
+.cate:hover {
+  box-shadow: 0 3px 10px rgb(52 54 73 / 20%);
+}
+.cate:hover .text-box p {
+  text-decoration: underline;
+}
+
+.text-box p {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  mask-image: linear-gradient(to right,rgba(0,0,0,1) 90%,rgba(0,0,0,0));
+  font-weight: 700;
+  line-height: 1.5;
+  color: #1c1d1d;
+  font-size: 16px;
+}
 
