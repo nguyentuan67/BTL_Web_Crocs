@@ -11,6 +11,7 @@ body {
   justify-content: center;
   flex-direction: column;
   background-color: #eee;
+  overflow-x: hidden;
 }
 
 img {
@@ -57,6 +58,20 @@ li {
   color: #fff;
   border: 1px solid #fff;
 }
+@media (max-width: 479px) {
+  #footer .social-block .club {
+    padding: 16px 15px;
+    background-color: #000;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #footer .social-block .club h2 {
+    text-align: center;
+  }
+  #footer .social-block .club button {
+    width: 90%;
+  }
+}
 #footer .social-link {
   width: 100vw;
   display: flex;
@@ -98,6 +113,24 @@ li {
 #footer .social-link .social-link__inner .list-link i {
   display: block;
   font-size: 20px;
+}
+@media (max-width: 479px) {
+  #footer .social-link .social-link__inner {
+    padding: 16px 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  #footer .social-link .social-link__inner .social-link__inner-item img {
+    display: inline-block;
+    width: 25px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #footer .social-link .list-link {
+    padding-top: 15px;
+  }
 }
 #footer .customer {
   width: 100vw;
@@ -166,6 +199,15 @@ li {
   font-size: 14px;
   cursor: pointer;
 }
+@media (max-width: 479px) {
+  #footer .customer .customer__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+}
 #footer .information {
   width: 100vw;
   display: flex;
@@ -189,4 +231,10 @@ li {
   text-align: center;
   font-size: 15px;
   line-height: 1.9;
+}
+@media (max-width: 479px) {
+  #footer .information .information__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }/*# sourceMappingURL=footer.css.map */
