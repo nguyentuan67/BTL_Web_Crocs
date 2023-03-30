@@ -29,6 +29,10 @@ li {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     .h-top {
         width: 100vw;
 
@@ -184,131 +188,7 @@ li {
         }
     }
 }
-
-// ! Footer CSS
-#footer {
-    .social-block {
-        .club {
-            width: 100vw;
-            padding: 16px 0;
-            border-bottom: 1px solid #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            background-color: #000;
-            font-family: Nunito, "Helvetica Neue", Arial, "Lucida Grande",
-                sans-serif;
-            h2 {
-                font-size: 20px;
-                padding-right: 15px;
-                text-align: right;
-            }
-            button {
-                width: 240px;
-                height: 50px;
-                align-items: center;
-                border: 1px solid #000;
-                background-color: #ffffff;
-                display: flex;
-                justify-content: center;
-                font-size: 17px;
-                font-family: "Montserrat";
-                font-weight: 600;
-                line-height: 22.72px;
-                text-align: center;
-                text-transform: capitalize;
-                &:hover {
-                    background-color: #000;
-                    color: #fff;
-                    border: 1px solid #fff;
-                }
-            }
-        }
-    }
-
-    .social-link {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000;
-        .social-link__inner {
-            max-width: 1200px;
-            width: 100%;
-            padding: 15px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .social-link__inner-item {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 5px;
-                text-decoration: none;
-                text-transform: uppercase;
-                color: #fff;
-                img {
-                    display: inline-block;
-                }
-                span {
-                    font-family: "Montserrat";
-                    font-weight: bold;
-                }
-            }
-            .list-link {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-                i {
-                    display: block;
-                    // width: 20px;
-                    // height: 20px;
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-
-    .information {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000;
-        .information__inner {
-            max-width: 1200px;
-            width: 100%;
-            padding: 15px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .information__inner-item {
-                p {
-                    color: #ffffff;
-                    font-family: Montserrat;
-                    font-size: 20px;
-                    font-weight: 700;
-                    line-height: 21px;
-                    margin: 0px 0px 10px;
-                    padding: 0px 0px 5px;
-                    text-shadow: #ffffff 0.5px 0px 0px;
-                    text-transform: capitalize;
-                }
-                ul {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: center;
-                    flex-direction: column;
-                    gap: 5px;
-
-                    li {
-                        font-family: "Nunito";
-                        color: #fff;
-                    }
-                }
-            }
-        }
-    }
+// ! Page Content CSS
+#page-content {
+    height: 400px;
 }
