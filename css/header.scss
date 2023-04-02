@@ -48,7 +48,11 @@ img {
 li {
     list-style-type: none;
 }
-
+// Class for responsive
+.hidden-mobile-hd {
+    display: none;
+}
+// CSS PC Client
 #header {
     display: flex;
     align-items: center;
@@ -94,7 +98,7 @@ li {
                     text-align: center;
                     font-size: 13px;
                     font-weight: 600;
-                    font-family: Montserrat;
+                    font-family: "Montserrat";
                     text-transform: uppercase;
 
                     &:hover {
@@ -224,6 +228,44 @@ li {
             }
             .h-bottom__content__mobile {
                 display: block;
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                .left {
+                    flex: 1;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    i {
+                        cursor: pointer;
+                        padding: 5px;
+                        font-size: 24px;
+                    }
+                    img {
+                        cursor: pointer;
+                        scale: 0.8;
+                    }
+                }
+
+                .right {
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 5px;
+                    i {
+                        cursor: pointer;
+                        padding: 5px;
+                        font-size: 20px;
+                    }
+                    img {
+                        cursor: pointer;
+                        scale: 0.8;
+                    }
+                }
             }
         }
     }

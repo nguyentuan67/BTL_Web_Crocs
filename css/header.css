@@ -22,6 +22,10 @@ li {
   list-style-type: none;
 }
 
+.hidden-mobile-hd {
+  display: none;
+}
+
 #header {
   display: flex;
   align-items: center;
@@ -65,7 +69,7 @@ li {
   text-align: center;
   font-size: 13px;
   font-weight: 600;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   text-transform: uppercase;
 }
 #header .h-top .h-top__content .login-navigation li:hover {
@@ -174,5 +178,42 @@ li {
   }
   #header .h-bottom .h-bottom__content__mobile {
     display: block;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  #header .h-bottom .h-bottom__content__mobile .left {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .h-bottom .h-bottom__content__mobile .left i {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 24px;
+  }
+  #header .h-bottom .h-bottom__content__mobile .left img {
+    cursor: pointer;
+    scale: 0.8;
+  }
+  #header .h-bottom .h-bottom__content__mobile .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+  }
+  #header .h-bottom .h-bottom__content__mobile .right i {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+  }
+  #header .h-bottom .h-bottom__content__mobile .right img {
+    cursor: pointer;
+    scale: 0.8;
   }
 }/*# sourceMappingURL=header.css.map */
