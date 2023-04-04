@@ -12,11 +12,18 @@ window.addEventListener("resize", toggleMobileHeader); // Gọi khi thay đổi 
 
 // Module 2: Tại giao diện điện thoại: Ẩn hiện navbar khi click vào icon Menu
 const html = document.documentElement;
-const navbar = document.getElementById("navbar-mobile");
+const navbar = document.getElementById("nav-mobile");
 const toggleNavBtn = document.getElementById("toggle-nav-btn");
 
-function toggleNavbar(e) {
-    // navbar.classList.toggle("active");
+function handleClick(e) {
+    toggleNavbarIcon(e);
+    showNavbarMobile();
+}
+
+toggleNavBtn.addEventListener("click", handleClick);
+
+function toggleNavbarIcon(e) {
+    // console.log(e.target.classList);
     if (e.target.classList.contains("fa-bars")) {
         e.target.classList.remove("fa-bars");
         e.target.classList.add("fa-xmark");
@@ -24,13 +31,20 @@ function toggleNavbar(e) {
         e.target.classList.remove("fa-xmark");
         e.target.classList.add("fa-bars");
     }
-    console.log("akdfhkfdh");
+    console.log(navbar.classList);
 }
 
+function showNavbarMobile() {
+    navbar.style.display !== "flex"
+        ? (navbar.style.display = "flex")
+        : (navbar.style.display = "none");
+}
+
+html.addEventListener("click", hideNavbar);
 function hideNavbar(e) {
+    console.log("Bam ra ngoai");
     if (!navbar.contains(e.target) && navbar.classList.contains("active")) {
         navbar.classList.remove("active");
     }
+    e.stopPropagation();
 }
-toggleNavBtn.addEventListener("click", toggleNavbar);
-html.addEventListener("click", hideNavbar);
