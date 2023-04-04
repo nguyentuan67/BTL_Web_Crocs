@@ -26,10 +26,6 @@ li {
   display: none;
 }
 
-.active {
-  display: block;
-}
-
 #header {
   display: flex;
   align-items: center;

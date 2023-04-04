@@ -12,9 +12,28 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     background-color: #eee;
 }
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a6aaab;
+    // background-color: red;
+    border-radius: 70px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+// ::-webkit-scrollbar-thumb:hover {
+//     background-color: transparent;
+// }
 // ! Header CSS
 img {
     display: block;
@@ -26,5 +45,5 @@ li {
 
 // ! Page Content CSS
 #page-content {
-    height: 400px;
+    height: 4000px;
 }

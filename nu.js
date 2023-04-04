@@ -23,7 +23,6 @@ function handleClick(e) {
 toggleNavBtn.addEventListener("click", handleClick);
 
 function toggleNavbarIcon(e) {
-    // console.log(e.target.classList);
     if (e.target.classList.contains("fa-bars")) {
         e.target.classList.remove("fa-bars");
         e.target.classList.add("fa-xmark");
@@ -31,7 +30,6 @@ function toggleNavbarIcon(e) {
         e.target.classList.remove("fa-xmark");
         e.target.classList.add("fa-bars");
     }
-    console.log(navbar.classList);
 }
 
 function showNavbarMobile() {
@@ -39,12 +37,17 @@ function showNavbarMobile() {
         ? (navbar.style.display = "flex")
         : (navbar.style.display = "none");
 }
-
+// Ẩn khi bấm ra ngoài
 html.addEventListener("click", hideNavbar);
 function hideNavbar(e) {
-    console.log("Bam ra ngoai");
-    if (!navbar.contains(e.target) && navbar.classList.contains("active")) {
-        navbar.classList.remove("active");
+    if (
+        navbar.style.display !== "none" &&
+        !navbar.contains(e.target) &&
+        !toggleNavBtn.contains(e.target)
+    ) {
+        navbar.style.display = "none";
+        toggleNavBtn.classList.remove("fa-xmark");
+        toggleNavBtn.classList.add("fa-bars");
+        console.log("Vua bam ra ngoai");
     }
-    e.stopPropagation();
 }

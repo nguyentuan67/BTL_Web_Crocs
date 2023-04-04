@@ -13,6 +13,22 @@ body {
   background-color: #eee;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a6aaab;
+  border-radius: 70px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
 img {
   display: block;
 }
@@ -22,5 +38,5 @@ li {
 }
 
 #page-content {
-  height: 400px;
+  height: 4000px;
 }/*# sourceMappingURL=nu.css.map */
