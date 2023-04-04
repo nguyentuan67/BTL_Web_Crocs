@@ -1,0 +1,238 @@
+li {
+    list-style-type: none;
+}
+
+.hidden-mobile-hd {
+    display: none;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+#header .h-top {
+    width: 100vw;
+    background-color: #000;
+}
+#header .h-top .h-top__content {
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .h-top .h-top__content a {
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+#header .h-top .h-top__content .login-navigation {
+    margin-bottom: 0 !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Montserrat";
+}
+#header .h-top .h-top__content .login-navigation li {
+    padding: 9px 30px 7px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+#header .h-top .h-top__content .login-navigation li:hover {
+    color: #000 !important;
+    background-color: #fff;
+    animation: all 0.3ms;
+}
+#header .h-top .h-top__content .login-navigation li:hover a,
+#header .h-top .h-top__content .login-navigation li:hover i {
+    color: #000;
+}
+#header .h-top .h-top__content .login-navigation li:first-child {
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}
+#header .h-top .h-top__content .login-navigation li:last-child {
+    border-left: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .h-top .h-top__content .login-navigation li:last-child a {
+    text-decoration: none;
+}
+#header .h-top .h-top__content .login-navigation li:last-child i {
+    display: block;
+}
+@media (max-width: 479px) {
+    #header .h-top .h-top__content .login-navigation {
+        display: none;
+    }
+}
+#header .h-bottom {
+    width: 100vw;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+}
+#header .h-bottom .h-bottom__content {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .h-bottom .h-bottom__content .h-bottom-left {
+    display: flex;
+}
+#header .h-bottom .h-bottom__content .h-bottom-left #logo-to-home #logo {
+    display: block;
+    padding-left: 15px;
+}
+#header .h-bottom .h-bottom__content .h-bottom-left .navigation {
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#header .h-bottom .h-bottom__content .h-bottom-left .navigation li {
+    padding: 7px 12px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+#header .h-bottom .h-bottom__content .h-bottom-left .navigation li a {
+    text-decoration: none;
+    color: black;
+}
+#header .h-bottom .h-bottom__content .h-bottom-left .navigation li a:hover {
+    color: #006da4;
+}
+#header .h-bottom .h-bottom__content .h-bottom-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#header .h-bottom .h-bottom__content .h-bottom-right .box-input {
+    width: 300px;
+    max-width: 300px;
+    height: 46px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+}
+#header .h-bottom .h-bottom__content .h-bottom-right .box-input input {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    color: #1c1d1d;
+    font-family: Nunito;
+    line-height: 21px;
+    flex: 1 1 auto;
+}
+#header .h-bottom .h-bottom__content .h-bottom-right .box-input i {
+    display: block;
+    padding-right: 10px;
+}
+#header .h-bottom .h-bottom__content .h-bottom-right i {
+    cursor: pointer;
+}
+@media (max-width: 479px) {
+    #header .h-bottom .h-bottom__content {
+        display: none;
+    }
+    #header .h-bottom .h-bottom__content__mobile {
+        display: block;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #header .h-bottom .h-bottom__content__mobile .left {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+    #header .h-bottom .h-bottom__content__mobile .left i {
+        cursor: pointer;
+        padding: 10px;
+        font-size: 24px;
+    }
+    #header .h-bottom .h-bottom__content__mobile .left img {
+        cursor: pointer;
+        scale: 0.8;
+    }
+    #header .h-bottom .h-bottom__content__mobile .left #nav-mobile {
+        padding-left: 0;
+        position: absolute;
+        top: 58px;
+        left: -20px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #header .h-bottom .h-bottom__content__mobile .left #nav-mobile li {
+        width: 100vw;
+        height: 56px;
+        padding: 20px;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        text-transform: uppercase;
+    }
+    #header .h-bottom .h-bottom__content__mobile .left #nav-mobile li a {
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    #header .h-bottom .h-bottom__content__mobile .left #nav-mobile li i {
+        padding: 8px 11px;
+        margin-right: 5px;
+        font-weight: bold;
+    }
+    #header .h-bottom .h-bottom__content__mobile .left #nav-mobile li:target {
+        color: orangered;
+    }
+    #header .h-bottom .h-bottom__content__mobile .right {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+    }
+    #header .h-bottom .h-bottom__content__mobile .right i {
+        cursor: pointer;
+        padding: 5px;
+        font-size: 20px;
+    }
+    #header .h-bottom .h-bottom__content__mobile .right img {
+        cursor: pointer;
+        scale: 0.8;
+    }
+} /*# sourceMappingURL=header.css.map */
