@@ -3,7 +3,7 @@ window.onload = function () {
   const silderWrap = document.querySelector(".slider-wrap");
   const lastChildAppend = document.querySelector(".product-card:last-child");
   silderWrap.prepend(lastChildAppend);
-  document.querySelectorAll(".product-card").forEach(function(productCard) {
+  document.querySelectorAll(".slider-wrap .product-card").forEach(function(productCard) {
     productCard.style.left = -cardWidth + 'px';
   });
   document.querySelector('#next-arrow').addEventListener('click',function () {

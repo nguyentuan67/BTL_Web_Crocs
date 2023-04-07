@@ -252,11 +252,14 @@ header {
 .section-new {
   background-color: #e9f8fc;
 }
+.section-suggest {
+  background-color: #f6f1b4;
+}
 
 .section-title {
   font-size: 25.5px;
   font-weight: 700;
-  padding: 40px 30px;
+  padding: 40px 0;
 }
 
 .text-center .section-title {
