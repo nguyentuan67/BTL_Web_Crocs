@@ -48,6 +48,53 @@ function hideNavbar(e) {
         navbar.style.display = "none";
         toggleNavBtn.classList.remove("fa-xmark");
         toggleNavBtn.classList.add("fa-bars");
-        console.log("Vua bam ra ngoai");
+        // console.log("Vua bam ra ngoai");
     }
 }
+//
+Array.from(document.getElementsByClassName("plus-icon-1")).forEach(
+    (currentItem) => {
+        currentItem.addEventListener("click", () => console.log("Click + "));
+    }
+);
+// Sidebar: xoay 45 độ dấu cộng
+const icon = document.querySelectorAll(".plus-icon-1");
+[...icon].forEach((currentIcon) => {
+    let check = false;
+    currentIcon.addEventListener("click", () => {
+        currentIcon.classList.toggle("rotate");
+        const ul =
+            currentIcon.parentElement.parentElement.lastElementChild
+                .lastElementChild;
+        console.log(ul);
+        check = !check;
+        check ? (ul.style.display = "block") : (ul.style.display = "none");
+    });
+});
+
+// const icon2 = document.querySelectorAll(".plus-icon-1");
+// [...icon2].forEach((currentIcon) => {
+//     let check = false;
+//     currentIcon.addEventListener("click", () => {
+
+//     });
+// });
+
+// Mo rong slidebar
+// const expandable = document.querySelectorAll(".sidebar--option");
+// console.log({ expandable });
+// const ul = document.querySelectorAll(".sidebar--option ul");
+// console.log({ ul });
+// let check = false;
+// [...expandable].forEach((currentItem) => {
+//     currentItem.addEventListener("click", () => {
+//         console.log(currentItem.lastElementChild.clientHeight);
+//         currentItem.style.height =
+//             currentItem.offsetHeight +
+//             currentItem.lastElementChild.clientHeight +
+//             "px";
+//         check = true;
+//     });
+
+//     check == true ? currentItem.removeEventListener("click") : currentItem;
+// });
