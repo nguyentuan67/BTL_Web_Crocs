@@ -68,7 +68,7 @@ const icon = document.querySelectorAll(".plus-icon-1");
                 .lastElementChild;
         console.log(ul);
         check = !check;
-        check ? (ul.style.display = "block") : (ul.style.display = "none");
+        check ? (ul.style.display = "flex") : (ul.style.display = "none");
     });
 });
 
