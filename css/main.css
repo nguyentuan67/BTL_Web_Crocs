@@ -255,6 +255,10 @@ header {
 .section-suggest {
   background-color: #f6f1b4;
 }
+.section-jibbitz {
+  background-color: #f6f3f7;
+  padding-bottom: 30px;
+}
 
 .section-title {
   font-size: 25.5px;
@@ -317,6 +321,10 @@ header {
   position: relative;
   left: 0;
   transition: all 0.3 ease-in-out;
+}
+.card-jibbitz {
+  width: 20%;
+  padding: 0 6px;
 }
 .slider .product-card {
   padding: 0 5px;
