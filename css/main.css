@@ -12,6 +12,10 @@ button {
   background: none;
   border: none;
 }
+
+.main {
+  width: 100%;
+}
 /* top header */
 .top-header {
   display: flex;
