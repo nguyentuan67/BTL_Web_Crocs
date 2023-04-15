@@ -72,29 +72,23 @@ const icon = document.querySelectorAll(".plus-icon-1");
     });
 });
 
-// const icon2 = document.querySelectorAll(".plus-icon-1");
-// [...icon2].forEach((currentIcon) => {
-//     let check = false;
-//     currentIcon.addEventListener("click", () => {
+// scroll to top
+const scrollToTopButton = document.getElementById("scroll-to-top");
 
-//     });
-// });
+function checkScroll() {
+    if (window.pageYOffset > 100) {
+        scrollToTopButton.style.display = "block";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+}
 
-// Mo rong slidebar
-// const expandable = document.querySelectorAll(".sidebar--option");
-// console.log({ expandable });
-// const ul = document.querySelectorAll(".sidebar--option ul");
-// console.log({ ul });
-// let check = false;
-// [...expandable].forEach((currentItem) => {
-//     currentItem.addEventListener("click", () => {
-//         console.log(currentItem.lastElementChild.clientHeight);
-//         currentItem.style.height =
-//             currentItem.offsetHeight +
-//             currentItem.lastElementChild.clientHeight +
-//             "px";
-//         check = true;
-//     });
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+}
 
-//     check == true ? currentItem.removeEventListener("click") : currentItem;
-// });
+window.addEventListener("scroll", checkScroll);
+scrollToTopButton.addEventListener("click", scrollToTop);
