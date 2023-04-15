@@ -7,7 +7,6 @@
 *.sass.map
 *.scss.map
 *.scss
-
 ### vscode ###
 .vscode
 
