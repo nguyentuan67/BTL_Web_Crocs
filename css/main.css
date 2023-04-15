@@ -440,3 +440,40 @@ header {
   font-size: 16px;
   font-weight: 700;
 }
+
+/* top footer */
+.top-footer {
+  width: 100%;
+  padding: 20px 0 30px;
+  border-top: 2px solid #225b80;
+}
+.top-footer-icon {
+  margin-right: 15px;
+}
+.top-footer-icon svg {
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+  padding: 8px;
+  border: 2px solid #225b80;
+  border-radius: 2px;
+  fill: #225b80;
+}
+
+.top-footer-title {
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 3px;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #225b80;
+}
+
+.top-footer-content {
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 17px;
+}
