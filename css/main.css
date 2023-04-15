@@ -168,6 +168,10 @@ header {
   height: 562x;
 }
 
+.banner.footer-banner {
+  height: 200px;
+}
+
 .banner img {
   height: 100%;
   width: 100%;
@@ -407,3 +411,32 @@ header {
 }
 
 /* end card */
+/* collection */
+.collection {
+  display: block;
+  position: relative;
+  padding: 10px 30px 30px;
+}
+.collection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.04;
+  z-index: 2;
+}
+.cate .collection+.text-box {
+  bottom: 16px;
+  left: 2px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #1c1d1d;
+}
+
+.cate .collection+.text-box p {
+  font-size: 16px;
+  font-weight: 700;
+}
