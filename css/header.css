@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: #eee; */
+  background-color: #eee;
   overflow-x: hidden !important;
 }
 
@@ -34,7 +34,7 @@ li {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1;
 }
 #header .h-top {
   width: 100vw;
