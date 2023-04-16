@@ -20,6 +20,7 @@ button {
 
 .main {
     width: 100%;
+    margin-top: 119px;
 }
 .overlay {
     position: fixed;
@@ -373,7 +374,6 @@ header {
 /* banner */
 .banner {
     margin-bottom: 6px;
-    margin-top: 40px;
 }
 
 .banner.sale {
