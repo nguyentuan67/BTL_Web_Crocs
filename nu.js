@@ -51,12 +51,7 @@ function hideNavbar(e) {
         // console.log("Vua bam ra ngoai");
     }
 }
-//
-Array.from(document.getElementsByClassName("plus-icon-1")).forEach(
-    (currentItem) => {
-        currentItem.addEventListener("click", () => console.log("Click + "));
-    }
-);
+
 // Sidebar: xoay 45 độ dấu cộng
 const icon = document.querySelectorAll(".plus-icon-1");
 [...icon].forEach((currentIcon) => {
@@ -66,7 +61,7 @@ const icon = document.querySelectorAll(".plus-icon-1");
         const ul =
             currentIcon.parentElement.parentElement.lastElementChild
                 .lastElementChild;
-        console.log(ul);
+        // console.log(ul);
         check = !check;
         check ? (ul.style.display = "flex") : (ul.style.display = "none");
     });
