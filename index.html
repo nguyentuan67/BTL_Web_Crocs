@@ -34,6 +34,7 @@
 </head>
 
 <body>
+  <div class="overlay"></div>
   <div class="top-header">
     <a href="#">Miễn phí giao hàng cho mọi đơn hàng từ 500.000đ</a>
     <div class="d-flex align-items-center">
@@ -100,7 +101,7 @@
                   <input type="text" placeholder="Tìm kiếm sản phẩm ..." />
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-header-btn"><i class="fa-solid fa-cart-shopping"></i></div>
                 <img src="./assets/img/vietnam (1).png" alt="Vietnamese" srcset="" />
                 <i class="fa-solid fa-arrows-rotate"></i>
               </div>
@@ -151,6 +152,60 @@
       </div>
     </div>
   </header>
+  <!-- cart -->
+  <div id="cart" class="">
+    <div class="cart_header">
+      <div class="cart_header__title">Đã thêm vào giỏ hàng</div>
+      <div class="cart_header__total">
+        <div class="total_text">Tổng tiền: </div>
+        <div class="total_number">2.095.000₫</div>
+      </div>
+      <div class="cart_close">
+        <i class="fal fa-times"></i>
+      </div>
+    </div>
+    <div class="cart_msg">
+      Bạn được Miễn Phí Vận Chuyển cho đơn hàng từ 500.000đ.
+      <div class="divide"></div>
+    </div>
+    <div class="cart_body">
+      <div class="cart_item">
+        <div class="cart_item_img">
+          <img src="https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208183-6UI-1_720x.jpg?v=1680682762" alt="">
+        </div>
+        <div class="cart_item__detail">
+          <div class="cart_item--title">Xăng đan Nữ Crocs Skyline Sandal</div>
+          <div class="cart_item--variant">
+            <div>Màu sắc: <span>Guava</span></div>
+            <div>Kích thước: <span>US W5</span></div>
+          </div>
+          <div class="cart_item--price">
+            <div class="item--qty">
+              <input type="text" value="1">
+              <button class="minus">
+                <i class="fal fa-minus"></i>
+              </button>
+              <button class="plus">
+                <i class="fal fa-plus"></i>
+              </button>
+            </div>
+            <div>2.095.000₫</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart_footer">
+      <div class="cart_footer__total">
+        <div class="total_text">Tổng tiền: </div>
+        <div class="total_number">2.095.000₫</div>
+      </div>
+      <div class="cart_btn">
+        <div class="cart_btn--outline">Xem giỏ hàng (1)</div>
+        <div class="cart_btn--main">Thanh Toán</div>
+      </div>
+    </div>
+  </div>
+
   <div class="main">
     <div class="sale banner">
       <img src="./assets/img/banner1.jpg" alt="">
