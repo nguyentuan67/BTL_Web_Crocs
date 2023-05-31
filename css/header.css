@@ -34,7 +34,7 @@ li {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 999;
 }
 #header .h-top {
   width: 100vw;
@@ -60,7 +60,7 @@ li {
   font-family: "Montserrat";
 }
 #header .h-top .h-top__content .login-navigation li {
-  padding: 9px 30px 7px;
+  padding: 7px 30px 7px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -251,4 +251,4 @@ li {
     cursor: pointer;
     scale: 0.8;
   }
-}/*# sourceMappingURL=header.css.map */
+} /*# sourceMappingURL=header.css.map */

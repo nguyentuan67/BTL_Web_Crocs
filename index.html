@@ -1,1130 +1,1037 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- bootstrap -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous"
-        />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-            crossorigin="anonymous"
-        ></script>
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap"
-            rel="stylesheet"
-        />
-        <!-- fontawesome -->
-        <link
-            rel="stylesheet"
-            href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
-        />
-        <script
-            src="https://kit.fontawesome.com/de7be06a7c.js"
-            crossorigin="anonymous"
-        ></script>
-        <!-- style -->
-        <link rel="stylesheet" href="./css/header.css" />
-        <link rel="stylesheet" href="./css/footer.css" />
-        <link rel="stylesheet" href="./css/main.css" />
-        <title>Crocs Việt Nam</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/de7be06a7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- style -->
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Crocs Việt Nam</title>
+  </head>
 
-    <body>
-        <div class="overlay"></div>
-        <div id="header">
-          <div class="h-top">
-              <div class="h-top__content">
-                  <a href="#"
-                      >Miễn phí giao hàng cho mọi đơn hàng từ
-                      500.000đ</a
-                  >
-                  <ul class="login-navigation">
-                      <li>Đăng ký và nhận 100.00 VND</li>
-                      <li>
-                          <a href="./login.html">Tài khoản</a>
-                          <i class="fa-regular fa-user"></i>
-                      </li>
-                  </ul>
-              </div>
+  <body>
+    <div class="overlay"></div>
+    <div id="header">
+      <div class="h-top">
+        <div class="h-top__content">
+          <a href="#">Miễn phí giao hàng cho mọi đơn hàng từ 500.000đ</a>
+          <ul class="login-navigation">
+            <li>Đăng ký và nhận 100.00 VND</li>
+            <li>
+              <a href="./html/login.html">Tài khoản</a>
+              <i class="fa-regular fa-user"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="h-bottom">
+        <div class="h-bottom__content">
+          <div class="h-bottom-left">
+            <a href="#" id="logo-to-home"
+              ><img
+                id="logo"
+                src="//cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x.png?v=1672210564"
+                srcset="
+                  //cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x.png?v=1672210564    1x,
+                  //cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x@2x.png?v=1672210564 2x
+                "
+                alt="Crocs™ Việt Nam"
+                itemprop="logo"
+            /></a>
+            <ul class="navigation">
+              <li class="nav-item">
+                <a href="./html/nu.html">Nữ</a>
+              </li>
+              <li class="nav-item">
+                <a href="./html/nam.html">Nam</a>
+              </li>
+              <li class="nav-item">
+                <a href="./html/treem.html">Trẻ em</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Phụ kiện JIBBITZ</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Ưu đãi</a>
+              </li>
+            </ul>
           </div>
-          <div class="h-bottom">
-              <div class="h-bottom__content">
-                  <div class="h-bottom-left">
-                      <a href="#" id="logo-to-home"
-                          ><img
-                              id="logo"
-                              src="//cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x.png?v=1672210564"
-                              srcset="
-                                  //cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x.png?v=1672210564    1x,
-                                  //cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x@2x.png?v=1672210564 2x
-                              "
-                              alt="Crocs™ Việt Nam"
-                              itemprop="logo"
-                      /></a>
-                      <ul class="navigation">
-                          <li class="nav-item">
-                              <a href="./nu.html">Nữ</a>
-                          </li>
-                          <li class="nav-item">
-                              <a href="./nam.html">Nam</a>
-                          </li>
-                          <li class="nav-item">
-                              <a href="./treem.html">Trẻ em</a>
-                          </li>
-                          <li class="nav-item">
-                              <a href="#">Phụ kiện JIBBITZ</a>
-                          </li>
-                          <li class="nav-item">
-                              <a href="#">Ưu đãi</a>
-                          </li>
-                      </ul>
-                  </div>
 
-                  <div class="h-bottom-right">
-                      <div class="box-input">
-                          <input
-                              type="text"
-                              placeholder="Tìm kiếm sản phẩm ..."
-                          />
-                          <i
-                              class="fa-solid fa-magnifying-glass"
-                          ></i>
-                      </div>
-                      <div class="cart-header-btn">
-                          <i
-                              class="fa-solid fa-cart-shopping"
-                          ></i>
-                      </div>
-                      <img
-                          src="./assets/img/vietnam (1).png"
-                          alt="Vietnamese"
-                          srcset=""
-                      />
-                      <i class="fa-solid fa-arrows-rotate"></i>
-                  </div>
-              </div>
-              <!-- !responsive-mobile-hd -->
-              <div
-                  id="responsive-mobile"
-                  class="h-bottom__content__mobile"
-              >
-                  <div class="left">
-                      <i
-                          id="toggle-nav-btn"
-                          class="fa-solid fa-bars"
-                      ></i>
-                      <a href="#" id="logo-to-home"
-                          ><img
-                              id="logo"
-                              src="//cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x.png?v=1672210564"
-                              srcset="
-                                  //cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x.png?v=1672210564    1x,
-                                  //cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x@2x.png?v=1672210564 2x
-                              "
-                              alt="Crocs™ Việt Nam"
-                              itemprop="logo"
-                      /></a>
-
-                      <ul id="nav-mobile" class="active">
-                          <li>
-                              <a href="#"><span>nữ</span></a>
-                              <i
-                                  class="fa-solid fa-angle-right"
-                              ></i>
-                          </li>
-                          <li>
-                              <a href="#"><span>nam</span></a>
-                              <i
-                                  class="fa-solid fa-angle-right"
-                              ></i>
-                          </li>
-                          <li>
-                              <a href="#"><span>trẻ em</span></a>
-                              <i
-                                  class="fa-solid fa-angle-right"
-                              ></i>
-                          </li>
-                          <li>
-                              <a href="#"
-                                  ><span
-                                      >Phụ kiện Jibbitz™</span
-                                  ></a
-                              >
-                              <i
-                                  class="fa-solid fa-angle-right"
-                              ></i>
-                          </li>
-                          <li>
-                              <a href="#"><span>Ưu đãi</span></a>
-                              <i
-                                  class="fa-solid fa-angle-right"
-                              ></i>
-                          </li>
-                      </ul>
-                  </div>
-
-                  <div class="right">
-                      <img
-                          src="./assets/img/vietnam (1).png"
-                          alt="Vietnamese"
-                          srcset=""
-                      />
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                      <i class="fa-regular fa-user"></i>
-                      <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-              </div>
+          <div class="h-bottom-right">
+            <div class="box-input">
+              <input type="text" placeholder="Tìm kiếm sản phẩm ..." />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="cart-header-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <img
+              src="./assets/img/vietnam (1).png"
+              alt="Vietnamese"
+              srcset=""
+            />
+            <i class="fa-solid fa-arrows-rotate"></i>
           </div>
         </div>
-        <!-- cart -->
-        <div id="cart" class="">
-            <div class="cart_header">
-                <div class="cart_header__title">Đã thêm vào giỏ hàng</div>
-                <div class="cart_header__total">
-                    <div class="total_text">Tổng tiền:</div>
-                    <div class="total_number">2.095.000₫</div>
-                </div>
-                <div class="cart_close">
-                    <i class="fal fa-times"></i>
-                </div>
-            </div>
-            <div class="cart_msg">
-                Bạn được Miễn Phí Vận Chuyển cho đơn hàng từ 500.000đ.
-                <div class="divide"></div>
-            </div>
-            <div class="cart_body">
-                <div class="cart_item">
-                    <div class="cart_item_img">
-                        <img
-                            src="https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208183-6UI-1_720x.jpg?v=1680682762"
-                            alt=""
-                        />
-                    </div>
-                    <div class="cart_item__detail">
-                        <div class="cart_item--title">
-                            Xăng đan Nữ Crocs Skyline Sandal
-                        </div>
-                        <div class="cart_item--variant">
-                            <div>Màu sắc: <span>Guava</span></div>
-                            <div>Kích thước: <span>US W5</span></div>
-                        </div>
-                        <div class="cart_item--price">
-                            <div class="item--qty">
-                                <input type="text" value="1" />
-                                <button class="minus">
-                                    <i class="fal fa-minus"></i>
-                                </button>
-                                <button class="plus">
-                                    <i class="fal fa-plus"></i>
-                                </button>
-                            </div>
-                            <div>2.095.000₫</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart_footer">
-                <div class="cart_footer__total">
-                    <div class="total_text">Tổng tiền:</div>
-                    <div class="total_number">2.095.000₫</div>
-                </div>
-                <div class="cart_btn">
-                    <div class="cart_btn--outline">Xem giỏ hàng (1)</div>
-                    <div class="cart_btn--main">Thanh Toán</div>
-                </div>
-            </div>
-        </div>
+        <!-- !responsive-mobile-hd -->
+        <div id="responsive-mobile" class="h-bottom__content__mobile">
+          <div class="left">
+            <i id="toggle-nav-btn" class="fa-solid fa-bars"></i>
+            <a href="#" id="logo-to-home"
+              ><img
+                id="logo"
+                src="//cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x.png?v=1672210564"
+                srcset="
+                  //cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x.png?v=1672210564    1x,
+                  //cdn.shopify.com/s/files/1/0585/8181/1355/files/logo-no-tag_153x@2x.png?v=1672210564 2x
+                "
+                alt="Crocs™ Việt Nam"
+                itemprop="logo"
+            /></a>
 
-        <div class="main">
-            <div class="sale banner">
-                <img src="./assets/img/banner1.jpg" alt="" />
+            <ul id="nav-mobile" class="active">
+              <li>
+                <a href="#"><span>nữ</span></a>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <a href="#"><span>nam</span></a>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <a href="#"><span>trẻ em</span></a>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <a href="#"><span>Phụ kiện Jibbitz™</span></a>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <a href="#"><span>Ưu đãi</span></a>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="right">
+            <img
+              src="./assets/img/vietnam (1).png"
+              alt="Vietnamese"
+              srcset=""
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cart -->
+    <div id="cart" class="">
+      <div class="cart_header">
+        <div class="cart_header__title">Đã thêm vào giỏ hàng</div>
+        <div class="cart_header__total">
+          <div class="total_text">Tổng tiền:</div>
+          <div class="total_number">2.095.000₫</div>
+        </div>
+        <div class="cart_close">
+          <i class="fal fa-times"></i>
+        </div>
+      </div>
+      <div class="cart_msg">
+        Bạn được Miễn Phí Vận Chuyển cho đơn hàng từ 500.000đ.
+        <div class="divide"></div>
+      </div>
+      <div class="cart_body">
+        <div class="cart_item">
+          <div class="cart_item_img">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208183-6UI-1_720x.jpg?v=1680682762"
+              alt=""
+            />
+          </div>
+          <div class="cart_item__detail">
+            <div class="cart_item--title">Xăng đan Nữ Crocs Skyline Sandal</div>
+            <div class="cart_item--variant">
+              <div>Màu sắc: <span>Guava</span></div>
+              <div>Kích thước: <span>US W5</span></div>
             </div>
-            <div class="ads banner">
+            <div class="cart_item--price">
+              <div class="item--qty">
+                <input type="text" value="1" />
+                <button class="minus">
+                  <i class="fal fa-minus"></i>
+                </button>
+                <button class="plus">
+                  <i class="fal fa-plus"></i>
+                </button>
+              </div>
+              <div>2.095.000₫</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart_footer">
+        <div class="cart_footer__total">
+          <div class="total_text">Tổng tiền:</div>
+          <div class="total_number">2.095.000₫</div>
+        </div>
+        <div class="cart_btn">
+          <div class="cart_btn--outline">Xem giỏ hàng (1)</div>
+          <div class="cart_btn--main">Thanh Toán</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="sale banner">
+        <img src="./assets/img/banner1.jpg" alt="" />
+      </div>
+      <div class="ads banner">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/PC_VN_0d13485c-452b-414c-b440-260612c84991_1500x.jpg?v=1680256062"
+          alt=""
+        />
+      </div>
+      <div class="nav-btns-wrapper">
+        <div class="nav-btn">
+          <a href="/nu.html">Nữ</a>
+        </div>
+        <div class="nav-btn">
+          <a href="#">Nam</a>
+        </div>
+        <div class="nav-btn">
+          <a href="#">Trẻ em</a>
+        </div>
+        <div class="nav-btn">
+          <a href="#">Phụ kiện</a>
+        </div>
+      </div>
+      <div class="container home-container">
+        <div class="category">
+          <div class="row gx-0 gy-2 gy-lg-0">
+            <div class="col-4 col-lg-2">
+              <a href="#" class="cate">
+                <img src="./assets/img/cate-clog.jpg" alt="" />
+                <div class="text-box">
+                  <p>Clogs</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-4 col-lg-2">
+              <a href="#" class="cate">
+                <img src="./assets/img/cate-xangdan.jpg" alt="" />
+                <div class="text-box">
+                  <p>Xăng đan</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-4 col-lg-2">
+              <a href="#" class="cate">
+                <img src="./assets/img/cate-depquaingang.jpg" alt="" />
+                <div class="text-box">
+                  <p>Dép quai ngang</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-4 col-lg-2">
+              <a href="#" class="cate">
+                <img src="./assets/img/cate-depxongon.jpg" alt="" />
+                <div class="text-box">
+                  <p>Dép xỏ ngón</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-4 col-lg-2">
+              <a href="#" class="cate">
+                <img src="./assets/img/cate-sneakers.jpg" alt="" />
+                <div class="text-box">
+                  <p>Sneakers</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-4 col-lg-2">
+              <a href="#" class="cate">
+                <img src="./assets/img/cate-giaydecao.jpg" alt="" />
+                <div class="text-box">
+                  <p>Giày đế cao</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="banner">
+          <img src="./assets/img/banner3.jpg" alt="" />
+        </div>
+        <div class="banner">
+          <img src="./assets/img/banner4.jpg" alt="" />
+        </div>
+      </div>
+      <div class="my-4 section section-new">
+        <div class="text-center">
+          <h2 class="section-title">Hàng mới</h2>
+        </div>
+        <div class="slider container">
+          <div class="slider-wrap">
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207988-0C4-1_360x.jpg?v=1679393248);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">
+                    Giày Clog Unisex Crocs Mega Crush Classic
+                  </p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">2.295.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207521-4NP-1_360x.jpg?v=1679393028);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">Giày Clog Unisex Crocs Crush Classic</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">1.895.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207937-1FT-1_360x.jpg?v=1679393210);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">Giày Clog Unisex Crocs Echo Clog</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">2.095.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207937-100-1_360x.jpg?v=1679393229);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">Giày Clog Unisex Crocs Echo</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">2.295.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207937-001-1_360x.jpg?v=1679393192);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">Giày Clog Unisex Crocs Echo Clog</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">2.295.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/206705-6VW-1_360x.jpg?v=1679392851);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">
+                    Giày Thời Trang Nữ Crocs Pacer Literide 360
+                  </p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">1.995.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208731-2CC-1_360x.jpg?v=1680073530);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">
+                    Dép quai ngang Unisex Crocs Crush Slide
+                  </p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">1.795.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208731-2Y2-1_360x.jpg?v=1680073537);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">
+                    Dép quai ngang Unisex Crocs Crush Slide
+                  </p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">1.795.000₫</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="arrow-btn next-btn" id="next-arrow">
+            <svg class="flickity-button-icon" viewBox="0 0 100 100">
+              <path
+                d="M 10,50 L 40,90 L 70,90 L 40,50  L 70,10 L 40,10 Z"
+                class="arrow"
+                transform="translate(100, 100) rotate(180) "
+              ></path>
+            </svg>
+          </div>
+          <div class="arrow-btn prev-btn" id="prev-arrow">
+            <svg class="flickity-button-icon" viewBox="0 0 100 100">
+              <path
+                d="M 10,50 L 40,90 L 70,90 L 40,50  L 70,10 L 40,10 Z"
+                class="arrow"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="container home-container">
+        <div class="banner">
+          <img src="./assets/img/banner3.jpg" alt="" />
+        </div>
+        <div class="banner">
+          <img src="./assets/img/banner4.jpg" alt="" />
+        </div>
+      </div>
+      <div class="my-4 section section-suggest">
+        <div class="container home-container">
+          <h2 class="section-title">Có thể bạn cũng thích</h2>
+          <div class="d-flex align-items-center">
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208731-2CC-1_360x.jpg?v=1680073530);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">
+                    Dép quai ngang Unisex Crocs Classic Crush Slide
+                  </p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">2.295.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/206453-2YI-1_360x.jpg?v=1670839857);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">
+                    Giày Clog Unisex Crocs Mega Crush Classic
+                  </p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">2.295.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207711-2F9-1_360x.jpg?v=1679393045);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">
+                    Giày Clog Unisex Crocs Mega Crush Classic
+                  </p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">2.295.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card new">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208170-2G9-1_360x.jpg?v=1673862923);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">
+                    Giày Clog Unisex Crocs Mega Crush Classic
+                  </p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">2.295.000₫</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container home-container">
+        <div class="banner mb-4">
+          <img src="./assets/img/banner4.jpg" alt="" />
+        </div>
+      </div>
+      <div class="my-4 section section-jibbitz">
+        <div class="container home-container">
+          <h2 class="section-title">Thỏa sức sáng tạo với Jibbitz!</h2>
+          <div class="d-flex align-items-center">
+            <div class="product-card card-jibbitz">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/10010616-1_360x.jpg?v=1659684202);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">Jibbitz™ Charm Star Wars Character</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">695.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card card-jibbitz">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/10010008-1_360x.jpg?v=1664879321);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">Jibbitz™ Charms Peppa Pig</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">625.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card card-jibbitz">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/10010005-1_360x.jpg?v=1659684238);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">Jibbitz™ Charm Harry Potter Symbol</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">625.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card card-jibbitz">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/10009998-1_360x.jpg?v=1663670199);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">Jibbitz™ Charms Elevated Pokemon</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">625.000₫</div>
+                </div>
+              </a>
+            </div>
+            <div class="product-card card-jibbitz">
+              <a href="#">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/10010007-1_360x.jpg?v=1659684222);
+                  "
+                ></div>
+                <div class="card-body">
+                  <p class="card-title">Jibbitz™ Charm Spider Man</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="card-price">625.000₫</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container home-container">
+        <div class="banner mb-4">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/1200x500_VN_cf166521-a354-4211-a597-e7cd03eea918_1500x.jpg?v=1677554807"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container home-container mb-4">
+        <div class="row gx-0 gy-2 gy-lg-0">
+          <div class="col-6 col-lg-3">
+            <a href="#" class="cate">
+              <div class="collection">
                 <img
-                    src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/PC_VN_0d13485c-452b-414c-b440-260612c84991_1500x.jpg?v=1680256062"
-                    alt=""
+                  src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/10010007-1_540x_6863f70c-c80e-401e-a950-f77ba06f5962_360x.jpg?v=1673592364"
+                  alt=""
                 />
-            </div>
-            <div class="nav-btns-wrapper">
-                <div class="nav-btn">
-                    <a href="/nu.html">Nữ</a>
-                </div>
-                <div class="nav-btn">
-                    <a href="#">Nam</a>
-                </div>
-                <div class="nav-btn">
-                    <a href="#">Trẻ em</a>
-                </div>
-                <div class="nav-btn">
-                    <a href="#">Phụ kiện</a>
-                </div>
-            </div>
-            <div class="container home-container">
-                <div class="category">
-                    <div class="row gx-0 gy-2 gy-lg-0">
-                        <div class="col-4 col-lg-2">
-                            <a href="#" class="cate">
-                                <img src="./assets/img/cate-clog.jpg" alt="" />
-                                <div class="text-box">
-                                    <p>Clogs</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-4 col-lg-2">
-                            <a href="#" class="cate">
-                                <img
-                                    src="./assets/img/cate-xangdan.jpg"
-                                    alt=""
-                                />
-                                <div class="text-box">
-                                    <p>Xăng đan</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-4 col-lg-2">
-                            <a href="#" class="cate">
-                                <img
-                                    src="./assets/img/cate-depquaingang.jpg"
-                                    alt=""
-                                />
-                                <div class="text-box">
-                                    <p>Dép quai ngang</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-4 col-lg-2">
-                            <a href="#" class="cate">
-                                <img
-                                    src="./assets/img/cate-depxongon.jpg"
-                                    alt=""
-                                />
-                                <div class="text-box">
-                                    <p>Dép xỏ ngón</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-4 col-lg-2">
-                            <a href="#" class="cate">
-                                <img
-                                    src="./assets/img/cate-sneakers.jpg"
-                                    alt=""
-                                />
-                                <div class="text-box">
-                                    <p>Sneakers</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-4 col-lg-2">
-                            <a href="#" class="cate">
-                                <img
-                                    src="./assets/img/cate-giaydecao.jpg"
-                                    alt=""
-                                />
-                                <div class="text-box">
-                                    <p>Giày đế cao</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="banner">
-                    <img src="./assets/img/banner3.jpg" alt="" />
-                </div>
-                <div class="banner">
-                    <img src="./assets/img/banner4.jpg" alt="" />
-                </div>
-            </div>
-            <div class="my-4 section section-new">
-                <div class="text-center">
-                    <h2 class="section-title">Hàng mới</h2>
-                </div>
-                <div class="slider container">
-                    <div class="slider-wrap">
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207988-0C4-1_360x.jpg?v=1679393248);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Giày Clog Unisex Crocs Mega Crush
-                                        Classic
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">2.295.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207521-4NP-1_360x.jpg?v=1679393028);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Giày Clog Unisex Crocs Crush Classic
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">1.895.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207937-1FT-1_360x.jpg?v=1679393210);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Giày Clog Unisex Crocs Echo Clog
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">2.095.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207937-100-1_360x.jpg?v=1679393229);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Giày Clog Unisex Crocs Echo
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">2.295.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207937-001-1_360x.jpg?v=1679393192);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Giày Clog Unisex Crocs Echo Clog
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">2.295.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/206705-6VW-1_360x.jpg?v=1679392851);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Giày Thời Trang Nữ Crocs Pacer Literide
-                                        360
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">1.995.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208731-2CC-1_360x.jpg?v=1680073530);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Dép quai ngang Unisex Crocs Crush Slide
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">1.795.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208731-2Y2-1_360x.jpg?v=1680073537);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Dép quai ngang Unisex Crocs Crush Slide
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">1.795.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="arrow-btn next-btn" id="next-arrow">
-                        <svg class="flickity-button-icon" viewBox="0 0 100 100">
-                            <path
-                                d="M 10,50 L 40,90 L 70,90 L 40,50  L 70,10 L 40,10 Z"
-                                class="arrow"
-                                transform="translate(100, 100) rotate(180) "
-                            ></path>
-                        </svg>
-                    </div>
-                    <div class="arrow-btn prev-btn" id="prev-arrow">
-                        <svg class="flickity-button-icon" viewBox="0 0 100 100">
-                            <path
-                                d="M 10,50 L 40,90 L 70,90 L 40,50  L 70,10 L 40,10 Z"
-                                class="arrow"
-                            ></path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div class="container home-container">
-                <div class="banner">
-                    <img src="./assets/img/banner3.jpg" alt="" />
-                </div>
-                <div class="banner">
-                    <img src="./assets/img/banner4.jpg" alt="" />
-                </div>
-            </div>
-            <div class="my-4 section section-suggest">
-                <div class="container home-container">
-                    <h2 class="section-title">Có thể bạn cũng thích</h2>
-                    <div class="d-flex align-items-center">
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208731-2CC-1_360x.jpg?v=1680073530);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Dép quai ngang Unisex Crocs Classic
-                                        Crush Slide
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">2.295.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/206453-2YI-1_360x.jpg?v=1670839857);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Giày Clog Unisex Crocs Mega Crush
-                                        Classic
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">2.295.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/207711-2F9-1_360x.jpg?v=1679393045);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Giày Clog Unisex Crocs Mega Crush
-                                        Classic
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">2.295.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card new">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/208170-2G9-1_360x.jpg?v=1673862923);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Giày Clog Unisex Crocs Mega Crush
-                                        Classic
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">2.295.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container home-container">
-                <div class="banner mb-4">
-                    <img src="./assets/img/banner4.jpg" alt="" />
-                </div>
-            </div>
-            <div class="my-4 section section-jibbitz">
-                <div class="container home-container">
-                    <h2 class="section-title">
-                        Thỏa sức sáng tạo với Jibbitz!
-                    </h2>
-                    <div class="d-flex align-items-center">
-                        <div class="product-card card-jibbitz">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/10010616-1_360x.jpg?v=1659684202);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Jibbitz™ Charm Star Wars Character
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">695.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card card-jibbitz">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/10010008-1_360x.jpg?v=1664879321);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Jibbitz™ Charms Peppa Pig
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">625.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card card-jibbitz">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/10010005-1_360x.jpg?v=1659684238);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Jibbitz™ Charm Harry Potter Symbol
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">625.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card card-jibbitz">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/10009998-1_360x.jpg?v=1663670199);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Jibbitz™ Charms Elevated Pokemon
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">625.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-card card-jibbitz">
-                            <a href="#">
-                                <div
-                                    class="card-img"
-                                    style="
-                                        background-image: url(https://cdn.shopify.com/s/files/1/0585/8181/1355/products/10010007-1_360x.jpg?v=1659684222);
-                                    "
-                                ></div>
-                                <div class="card-body">
-                                    <p class="card-title">
-                                        Jibbitz™ Charm Spider Man
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="card-price">625.000₫</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container home-container">
-                <div class="banner mb-4">
-                    <img
-                        src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/1200x500_VN_cf166521-a354-4211-a597-e7cd03eea918_1500x.jpg?v=1677554807"
-                        alt=""
-                    />
-                </div>
-            </div>
-            <div class="container home-container mb-4">
-                <div class="row gx-0 gy-2 gy-lg-0">
-                    <div class="col-6 col-lg-3">
-                        <a href="#" class="cate">
-                            <div class="collection">
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/10010007-1_540x_6863f70c-c80e-401e-a950-f77ba06f5962_360x.jpg?v=1673592364"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="text-box">
-                                <p>MUA JIBBITZ™ CHARMS</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <a href="#" class="cate">
-                            <div class="collection">
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/206935-5PT-7_540x_6a0483f2-082a-49bf-b262-61dc3d3fadb0_360x.jpg?v=1673592198"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="text-box">
-                                <p>MUA CLASSIC CROCS™</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <a href="#" class="cate">
-                            <div class="collection">
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/208102-4JQ-7_540x_dfb17fc8-35ca-4112-a50b-4cdb0d7d3735_360x.jpg?v=1673592215"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="text-box">
-                                <p>MUA GIÀY DÉP TRẺ EM</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <a href="#" class="cate">
-                            <div class="collection">
-                                <img
-                                    src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/207711-1FH-6_720x_8edd3876-fce6-4d23-a653-6b5045295691_360x.webp?v=1660538877"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="text-box">
-                                <p>MUA XĂNG ĐAN</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="container home-container mb-4">
-                <div class="banner footer-banner">
-                    <img
-                        src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/PC_-_VN_1500x.jpg?v=1680258258"
-                        alt=""
-                    />
-                </div>
-            </div>
-            <div class="top-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-lg-3">
-                            <div class="d-flex">
-                                <div class="top-footer-icon">
-                                    <svg
-                                        role="img"
-                                        class="flex-shrink-0"
-                                        aria-hidden="true"
-                                        aria-label="truck"
-                                        focusable="false"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 46 30"
-                                    >
-                                        <path
-                                            d="M45.2 13.1L40 6.8h-8.6c-.9 0-1.8.4-2.4 1V3.3C29 1.5 27.5 0 25.7 0H3.3C1.5 0 0 1.5 0 3.3v20.3c0 1.8 1.5 3.3 3.3 3.3H6c.8 1.7 2.6 3 4.6 3 2 0 3.8-1.2 4.6-3h10.6c1.5 0 2.7-1 3.1-2.3.6.7 1.5 1.2 2.5 1.2h.1c.5 2.3 2.5 4.1 5 4.1s4.5-1.8 5-4.1h1.2c1.8 0 3.3-1.5 3.3-3.2v-7.3c0-.9-.3-1.7-.8-2.2zM10.6 27.8c-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1zm16.5-4.2c0 .7-.6 1.3-1.3 1.3H15.7v-.1c0-2.8-2.3-5.1-5.1-5.1S5.5 22 5.5 24.8v.1H3.3c-.7 0-1.3-.6-1.3-1.3V3.3C2 2.6 2.6 2 3.3 2h22.6c.7 0 1.3.6 1.3 1.3v20.3h-.1zm16.1-9.8h-3.7c-.3 0-.5-.2-.5-.5V8.8l4.2 5zm-6.7 14c-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1zm7.5-5.4c0 .7-.6 1.2-1.3 1.2h-1.2c-.5-2.3-2.5-4.1-5-4.1s-4.5 1.8-5 4.1h-.1c-.7 0-1.2-.6-1.2-1.2V10c0-.7.6-1.3 1.2-1.3H38v4.5c0 .8.7 1.5 1.5 1.5h4.2v-.3c.1.2.2.4.2.7v7.3h.1z"
-                                        ></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p class="top-footer-title">
-                                        Miễn phí giao hàng
-                                    </p>
-                                    <p class="top-footer-content">
-                                        Cho tất cả các đơn hàng từ 500.000 VNĐ
-                                        trở lên
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="d-flex">
-                                <div class="top-footer-icon">
-                                    <svg
-                                        role="img"
-                                        class="flex-shrink-0"
-                                        aria-hidden="true"
-                                        aria-label="box"
-                                        focusable="false"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 47 41"
-                                    >
-                                        <path
-                                            d="M46.9 5.6L27.9 0l-4.5 6.5L19 0 0 5.6l4.7 7.2L.1 20l4.6 1.3v12.5l19.6 6.9 17.8-6.9V21.3l4.7-1.3-4.6-7.2 4.7-7.2zM3.2 6.7l15-4.4 3.4 4.9-15.3 4.3-3.1-4.8zm0 12.1L6.3 14l15.3 4-3.3 5-15.1-4.2zm19.1 19.1L6.7 32.5V21.9l12.4 3.5 3.2-4.8v17.3zm0-21.7L9.2 12.8l13.2-3.7v7.1h-.1zm6.4-13.9l15 4.4-3.1 4.7-15.2-4.1 3.3-5zM24.3 9l13.4 3.7-13.4 3.5V9zm15.9 23.5l-15.8 6.1V20.2l3.4 5.1 12.4-3.5v10.7zm3.5-13.7L28.6 23l-3.3-5 15.3-4 3.1 4.8z"
-                                        ></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p class="top-footer-title">
-                                        Dễ dàng đổi trả
-                                    </p>
-                                    <p class="top-footer-content">
-                                        Bạn muốn đổi sản phẩm? Không vấn đề gì.
-                                        Hãy liên hệ chúng tôi để đổi trả sản
-                                        phẩm dễ dàng hơn
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="d-flex">
-                                <div class="top-footer-icon">
-                                    <svg
-                                        role="img"
-                                        class="cx-svg cx-svg--ribbon cx-svg--lg cx-svg--border flex-shrink-0"
-                                        aria-hidden="true"
-                                        aria-label="ribbon"
-                                        focusable="false"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 34 52"
-                                    >
-                                        <path
-                                            d="M30.8 27.6c.5-.7.8-1.5.7-2.4 0-1.9.6-3.8 1.7-5.3.5-.7.8-1.5.8-2.4 0-.9-.3-1.7-.8-2.4a9.05 9.05 0 01-1.7-5.3c0-.9-.2-1.7-.8-2.4-.5-.7-1.2-1.2-2-1.5-1.8-.6-3.4-1.7-4.5-3.3-.5-.7-1.2-1.2-2-1.5-.8-.3-1.7-.3-2.5 0-1.8.6-3.8.6-5.6 0-.8-.3-1.7-.3-2.5 0s-1.5.8-2 1.5C8.7 4.2 7.1 5.4 5.3 6c-.8.2-1.5.8-2 1.5-.6.6-.8 1.5-.8 2.3 0 1.9-.6 3.8-1.7 5.3-.5.7-.8 1.5-.8 2.4 0 .9.3 1.7.8 2.4 1.1 1.5 1.7 3.4 1.7 5.3 0 .9.2 1.7.8 2.4.5.7 1.2 1.2 2 1.5.7.2 1.3.5 1.9.8L.3 47.1l7.4-2.2 4 6.3 4.5-11.3 4.7 10.4 3.8-7.5 8 3.5-5.6-16.6c.5-.3 1.1-.5 1.7-.7.8-.2 1.5-.7 2-1.4zM11.2 46.8l-2.7-4.2L3.7 44l5.1-12.8c.4.4.7.8 1 1.2.5.7 1.2 1.2 2 1.5.4.1.8.2 1.2.2.4 0 .8-.1 1.3-.2.8-.3 1.6-.4 2.3-.4l-5.4 13.3zm18.1-4.1l-5.6-2.4-2.8 5.4-3.8-8.4 1.5-3.8c.4.1.8.2 1.1.3.8.3 1.7.3 2.5 0s1.5-.8 2-1.5c.3-.5.7-.9 1.1-1.3l4 11.7zm-1.2-15.6c-2.2.7-4.2 2.1-5.5 4-.2.4-.6.6-1 .7-.4.1-.8.1-1.2 0-2.2-.8-4.6-.8-6.9 0-.4.1-.8.1-1.2 0-.4-.1-.7-.4-1-.7-1.4-2-3.3-3.4-5.5-4.1-.4-.1-.8-.4-1-.7-.2-.3-.4-.7-.4-1.2 0-2.4-.7-4.7-2.1-6.6-.2-.2-.3-.6-.3-1s.1-.8.4-1.2c1.4-1.9 2.1-4.2 2.1-6.5 0-.4.1-.8.4-1.2.2-.3.6-.6 1-.7 2.2-.7 4.2-2.1 5.5-4 .2-.4.6-.6 1-.7.2-.2.4-.2.6-.2.2 0 .4 0 .6.1 2.2.8 4.6.8 6.9 0 .4-.1.8-.1 1.2 0 .4.1.7.4 1 .7 1.4 2 3.3 3.4 5.5 4.1.4.1.8.4 1 .7.2.3.4.7.4 1.2 0 2.4.7 4.7 2.1 6.6.3.3.4.8.4 1.2 0 .4-.1.8-.4 1.2-1.4 1.9-2.1 4.2-2.1 6.5 0 .4-.1.8-.4 1.2-.3.3-.7.5-1.1.6z"
-                                        ></path>
-                                        <path
-                                            d="M25.4 8.9c-2.3-2.3-5.3-3.5-8.5-3.5s-6.2 1.2-8.5 3.5-3.5 5.3-3.5 8.5 1.2 6.2 3.5 8.5 5.3 3.5 8.5 3.5 6.2-1.2 8.5-3.5 3.5-5.3 3.5-8.5c0-3.3-1.2-6.3-3.5-8.5zM24 24.4a9.9 9.9 0 01-7.1 2.9c-2.7 0-5.2-1-7.1-2.9C8 22.5 6.9 20 6.9 17.3a9.9 9.9 0 0110-10 9.9 9.9 0 0110 10c0 2.7-1 5.2-2.9 7.1z"
-                                        ></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p class="top-footer-title">
-                                        Bảo hành 30 ngày
-                                    </p>
-                                    <p class="top-footer-content">
-                                        Các sản phẩm của Crocs™ được bảo hành 30
-                                        ngày.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="d-flex">
-                                <div class="top-footer-icon">
-                                    <img
-                                        class="lazyloaded"
-                                        data-src="//cdn.shopify.com/s/files/1/0585/8181/1355/files/download_60x_2258f4bd-c740-481c-9550-6e8b2e26458f_60x.png?v=1636543647"
-                                        width="60"
-                                        height="35"
-                                        alt=""
-                                        src="//cdn.shopify.com/s/files/1/0585/8181/1355/files/download_60x_2258f4bd-c740-481c-9550-6e8b2e26458f_60x.png?v=1636543647"
-                                    />
-                                </div>
-                                <div>
-                                    <p class="top-footer-title">
-                                        Bảo mật thanh toán
-                                    </p>
-                                    <p class="top-footer-content">
-                                        100% giao dịch được bảo mật bằng mã hóa
-                                        SSL.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              </div>
+              <div class="text-box">
+                <p>MUA JIBBITZ™ CHARMS</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-3">
+            <a href="#" class="cate">
+              <div class="collection">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/206935-5PT-7_540x_6a0483f2-082a-49bf-b262-61dc3d3fadb0_360x.jpg?v=1673592198"
+                  alt=""
+                />
+              </div>
+              <div class="text-box">
+                <p>MUA CLASSIC CROCS™</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-3">
+            <a href="#" class="cate">
+              <div class="collection">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/208102-4JQ-7_540x_dfb17fc8-35ca-4112-a50b-4cdb0d7d3735_360x.jpg?v=1673592215"
+                  alt=""
+                />
+              </div>
+              <div class="text-box">
+                <p>MUA GIÀY DÉP TRẺ EM</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-3">
+            <a href="#" class="cate">
+              <div class="collection">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/207711-1FH-6_720x_8edd3876-fce6-4d23-a653-6b5045295691_360x.webp?v=1660538877"
+                  alt=""
+                />
+              </div>
+              <div class="text-box">
+                <p>MUA XĂNG ĐAN</p>
+              </div>
+            </a>
+          </div>
         </div>
-
-        <!-- footer -->
-        <div id="footer">
-            <div class="social-block">
-                <div class="club">
-                    <h2>
-                        THAM GIA CÂU LẠC BỘ CROCS & NHẬN NGAY <br />
-                        VOUCHER 100.000 VNĐ
-                    </h2>
-                    <button>Đăng ký miễn phí</button>
-                </div>
-                <div class="social-link">
-                    <div class="social-link__inner">
-                        <a class="social-link__inner-item" href="#">
-                            <i class="fa-regular fa-user"></i>
-                            <span>Tài khoản</span>
-                        </a>
-                        <a class="social-link__inner-item" href="#">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Hệ thống cửa hàng</span>
-                        </a>
-                        <a class="social-link__inner-item" href="#">
-                            <img
-                                src="./assets/img/vietnam (1).png"
-                                alt="Vietnamese"
-                                srcset=""
-                            />
-                            <span>Tiếng Việt</span>
-                        </a>
-                        <a class="social-link__inner-item list-link" href="#">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-square-pinterest"></i>
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="customer">
-                    <div class="customer__inner">
-                        <div class="customer__inner-item">
-                            <p><u>Sh</u>op Crocs</p>
-                            <ul>
-                                <li>Nữ</li>
-                                <li>Nam</li>
-                                <li>Trẻ em</li>
-                                <li>Phụ kiện Jibbitz™</li>
-                            </ul>
-                        </div>
-                        <div class="customer__inner-item">
-                            <p><u>Về</u> Crocs</p>
-                            <ul>
-                                <li>Giới thiệu về Crocs™</li>
-                                <li>Hệ thống cửa hàng</li>
-                                <li>Sơ đồ web</li>
-                            </ul>
-                        </div>
-                        <div class="customer__inner-item">
-                            <p><u>Hỗ</u> Trợ Khách Hàng</p>
-                            <ul>
-                                <li>Hướng dẫn tạo tài khoản</li>
-                                <li>Hướng dẫn mua hàng</li>
-                                <li>Hướng dẫn chọn size</li>
-                                <li>Chính sách giao hàng</li>
-                                <li>Chính sách đổi trả</li>
-                                <li>Chính sách bảo hành</li>
-                                <li>Chính sách trả góp</li>
-                                <li>Chính sách bảo mật</li>
-                                <li>Điều khoản và điều kiện</li>
-                                <li>Hỗ trợ và Giải đáp thắc mắc</li>
-                            </ul>
-                        </div>
-                        <div class="customer__inner-item">
-                            <p><u>Nh</u>ận Thông Tin Khuyến Mãi</p>
-                            <ul>
-                                <li>
-                                    Đăng ký để cập nhật tin tức về ưu đãi đặc
-                                    biệt, <br />
-                                    chương trình khuyến mãi và nhận ngay voucher
-                                    <br />
-                                    100.000 VNĐ.
-                                </li>
-                                <li class="cl4">
-                                    <input
-                                        placeholder="Nhập email của bạn"
-                                        type="text"
-                                    />
-                                    <i class="fa-regular fa-paper-plane"></i>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="information">
-                    <div class="information__inner">
-                        <p>
-                            Xin lưu ý rằng website này không thuộc sự điều hành
-                            hoặc sở hữu bởi Crocs, Inc. hay bất kỳ chi nhánh,
-                            công ty con nào khác. Website này được sở hữu và
-                            điều hành độc lập bởi
-                            <strong>
-                                CÔNG TY TNHH MTV THƯƠNG MẠI THỜI TRANG TỔNG HỢP
-                                (GTF)</strong
-                            >
-                            - Nhà phân phối chính thức được ủy quyền bởi Crocs,
-                            Inc.
-                        </p>
-                    </div>
-                    <div class="information__inner">
-                        <p>
-                            <strong
-                                >CÔNG TY TNHH MTV THƯƠNG MẠI THỜI TRANG TỔNG HỢP
-                                (GTF)</strong
-                            >
-                            <br />
-                            Văn phòng: Số 163, Phan Đăng Lưu, Phường 01, Phú
-                            Nhuận, Hồ Chí Minh, Việt Nam <br />
-                            Tổng đài: 1900 63 64 01<br />
-                            Mã số Doanh Nghiệp: 0314635071, đăng ký thay đổi
-                            ngày 20 tháng 04 năm 2020
-                        </p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="container home-container mb-4">
+        <div class="banner footer-banner">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0585/8181/1355/files/PC_-_VN_1500x.jpg?v=1680258258"
+            alt=""
+          />
         </div>
+      </div>
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div class="d-flex">
+                <div class="top-footer-icon">
+                  <svg
+                    role="img"
+                    class="flex-shrink-0"
+                    aria-hidden="true"
+                    aria-label="truck"
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 46 30"
+                  >
+                    <path
+                      d="M45.2 13.1L40 6.8h-8.6c-.9 0-1.8.4-2.4 1V3.3C29 1.5 27.5 0 25.7 0H3.3C1.5 0 0 1.5 0 3.3v20.3c0 1.8 1.5 3.3 3.3 3.3H6c.8 1.7 2.6 3 4.6 3 2 0 3.8-1.2 4.6-3h10.6c1.5 0 2.7-1 3.1-2.3.6.7 1.5 1.2 2.5 1.2h.1c.5 2.3 2.5 4.1 5 4.1s4.5-1.8 5-4.1h1.2c1.8 0 3.3-1.5 3.3-3.2v-7.3c0-.9-.3-1.7-.8-2.2zM10.6 27.8c-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1zm16.5-4.2c0 .7-.6 1.3-1.3 1.3H15.7v-.1c0-2.8-2.3-5.1-5.1-5.1S5.5 22 5.5 24.8v.1H3.3c-.7 0-1.3-.6-1.3-1.3V3.3C2 2.6 2.6 2 3.3 2h22.6c.7 0 1.3.6 1.3 1.3v20.3h-.1zm16.1-9.8h-3.7c-.3 0-.5-.2-.5-.5V8.8l4.2 5zm-6.7 14c-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1zm7.5-5.4c0 .7-.6 1.2-1.3 1.2h-1.2c-.5-2.3-2.5-4.1-5-4.1s-4.5 1.8-5 4.1h-.1c-.7 0-1.2-.6-1.2-1.2V10c0-.7.6-1.3 1.2-1.3H38v4.5c0 .8.7 1.5 1.5 1.5h4.2v-.3c.1.2.2.4.2.7v7.3h.1z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="top-footer-title">Miễn phí giao hàng</p>
+                  <p class="top-footer-content">
+                    Cho tất cả các đơn hàng từ 500.000 VNĐ trở lên
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="d-flex">
+                <div class="top-footer-icon">
+                  <svg
+                    role="img"
+                    class="flex-shrink-0"
+                    aria-hidden="true"
+                    aria-label="box"
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 47 41"
+                  >
+                    <path
+                      d="M46.9 5.6L27.9 0l-4.5 6.5L19 0 0 5.6l4.7 7.2L.1 20l4.6 1.3v12.5l19.6 6.9 17.8-6.9V21.3l4.7-1.3-4.6-7.2 4.7-7.2zM3.2 6.7l15-4.4 3.4 4.9-15.3 4.3-3.1-4.8zm0 12.1L6.3 14l15.3 4-3.3 5-15.1-4.2zm19.1 19.1L6.7 32.5V21.9l12.4 3.5 3.2-4.8v17.3zm0-21.7L9.2 12.8l13.2-3.7v7.1h-.1zm6.4-13.9l15 4.4-3.1 4.7-15.2-4.1 3.3-5zM24.3 9l13.4 3.7-13.4 3.5V9zm15.9 23.5l-15.8 6.1V20.2l3.4 5.1 12.4-3.5v10.7zm3.5-13.7L28.6 23l-3.3-5 15.3-4 3.1 4.8z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="top-footer-title">Dễ dàng đổi trả</p>
+                  <p class="top-footer-content">
+                    Bạn muốn đổi sản phẩm? Không vấn đề gì. Hãy liên hệ chúng
+                    tôi để đổi trả sản phẩm dễ dàng hơn
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="d-flex">
+                <div class="top-footer-icon">
+                  <svg
+                    role="img"
+                    class="cx-svg cx-svg--ribbon cx-svg--lg cx-svg--border flex-shrink-0"
+                    aria-hidden="true"
+                    aria-label="ribbon"
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 34 52"
+                  >
+                    <path
+                      d="M30.8 27.6c.5-.7.8-1.5.7-2.4 0-1.9.6-3.8 1.7-5.3.5-.7.8-1.5.8-2.4 0-.9-.3-1.7-.8-2.4a9.05 9.05 0 01-1.7-5.3c0-.9-.2-1.7-.8-2.4-.5-.7-1.2-1.2-2-1.5-1.8-.6-3.4-1.7-4.5-3.3-.5-.7-1.2-1.2-2-1.5-.8-.3-1.7-.3-2.5 0-1.8.6-3.8.6-5.6 0-.8-.3-1.7-.3-2.5 0s-1.5.8-2 1.5C8.7 4.2 7.1 5.4 5.3 6c-.8.2-1.5.8-2 1.5-.6.6-.8 1.5-.8 2.3 0 1.9-.6 3.8-1.7 5.3-.5.7-.8 1.5-.8 2.4 0 .9.3 1.7.8 2.4 1.1 1.5 1.7 3.4 1.7 5.3 0 .9.2 1.7.8 2.4.5.7 1.2 1.2 2 1.5.7.2 1.3.5 1.9.8L.3 47.1l7.4-2.2 4 6.3 4.5-11.3 4.7 10.4 3.8-7.5 8 3.5-5.6-16.6c.5-.3 1.1-.5 1.7-.7.8-.2 1.5-.7 2-1.4zM11.2 46.8l-2.7-4.2L3.7 44l5.1-12.8c.4.4.7.8 1 1.2.5.7 1.2 1.2 2 1.5.4.1.8.2 1.2.2.4 0 .8-.1 1.3-.2.8-.3 1.6-.4 2.3-.4l-5.4 13.3zm18.1-4.1l-5.6-2.4-2.8 5.4-3.8-8.4 1.5-3.8c.4.1.8.2 1.1.3.8.3 1.7.3 2.5 0s1.5-.8 2-1.5c.3-.5.7-.9 1.1-1.3l4 11.7zm-1.2-15.6c-2.2.7-4.2 2.1-5.5 4-.2.4-.6.6-1 .7-.4.1-.8.1-1.2 0-2.2-.8-4.6-.8-6.9 0-.4.1-.8.1-1.2 0-.4-.1-.7-.4-1-.7-1.4-2-3.3-3.4-5.5-4.1-.4-.1-.8-.4-1-.7-.2-.3-.4-.7-.4-1.2 0-2.4-.7-4.7-2.1-6.6-.2-.2-.3-.6-.3-1s.1-.8.4-1.2c1.4-1.9 2.1-4.2 2.1-6.5 0-.4.1-.8.4-1.2.2-.3.6-.6 1-.7 2.2-.7 4.2-2.1 5.5-4 .2-.4.6-.6 1-.7.2-.2.4-.2.6-.2.2 0 .4 0 .6.1 2.2.8 4.6.8 6.9 0 .4-.1.8-.1 1.2 0 .4.1.7.4 1 .7 1.4 2 3.3 3.4 5.5 4.1.4.1.8.4 1 .7.2.3.4.7.4 1.2 0 2.4.7 4.7 2.1 6.6.3.3.4.8.4 1.2 0 .4-.1.8-.4 1.2-1.4 1.9-2.1 4.2-2.1 6.5 0 .4-.1.8-.4 1.2-.3.3-.7.5-1.1.6z"
+                    ></path>
+                    <path
+                      d="M25.4 8.9c-2.3-2.3-5.3-3.5-8.5-3.5s-6.2 1.2-8.5 3.5-3.5 5.3-3.5 8.5 1.2 6.2 3.5 8.5 5.3 3.5 8.5 3.5 6.2-1.2 8.5-3.5 3.5-5.3 3.5-8.5c0-3.3-1.2-6.3-3.5-8.5zM24 24.4a9.9 9.9 0 01-7.1 2.9c-2.7 0-5.2-1-7.1-2.9C8 22.5 6.9 20 6.9 17.3a9.9 9.9 0 0110-10 9.9 9.9 0 0110 10c0 2.7-1 5.2-2.9 7.1z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="top-footer-title">Bảo hành 30 ngày</p>
+                  <p class="top-footer-content">
+                    Các sản phẩm của Crocs™ được bảo hành 30 ngày.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="d-flex">
+                <div class="top-footer-icon">
+                  <img
+                    class="lazyloaded"
+                    data-src="//cdn.shopify.com/s/files/1/0585/8181/1355/files/download_60x_2258f4bd-c740-481c-9550-6e8b2e26458f_60x.png?v=1636543647"
+                    width="60"
+                    height="35"
+                    alt=""
+                    src="//cdn.shopify.com/s/files/1/0585/8181/1355/files/download_60x_2258f4bd-c740-481c-9550-6e8b2e26458f_60x.png?v=1636543647"
+                  />
+                </div>
+                <div>
+                  <p class="top-footer-title">Bảo mật thanh toán</p>
+                  <p class="top-footer-content">
+                    100% giao dịch được bảo mật bằng mã hóa SSL.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <script src="./js/slide.js"></script>
-        <script src="./header.js"></script>
-        <script src="./nu.js"></script>
-    </body>
+    <!-- footer -->
+    <div id="footer">
+      <div class="social-block">
+        <div class="club">
+          <h2>
+            THAM GIA CÂU LẠC BỘ CROCS & NHẬN NGAY <br />
+            VOUCHER 100.000 VNĐ
+          </h2>
+          <button>Đăng ký miễn phí</button>
+        </div>
+        <div class="social-link">
+          <div class="social-link__inner">
+            <a class="social-link__inner-item" href="#">
+              <i class="fa-regular fa-user"></i>
+              <span>Tài khoản</span>
+            </a>
+            <a class="social-link__inner-item" href="#">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Hệ thống cửa hàng</span>
+            </a>
+            <a class="social-link__inner-item" href="#">
+              <img
+                src="./assets/img/vietnam (1).png"
+                alt="Vietnamese"
+                srcset=""
+              />
+              <span>Tiếng Việt</span>
+            </a>
+            <a class="social-link__inner-item list-link" href="#">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-pinterest"></i>
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+        <div class="customer">
+          <div class="customer__inner">
+            <div class="customer__inner-item">
+              <p><u>Sh</u>op Crocs</p>
+              <ul>
+                <li>Nữ</li>
+                <li>Nam</li>
+                <li>Trẻ em</li>
+                <li>Phụ kiện Jibbitz™</li>
+              </ul>
+            </div>
+            <div class="customer__inner-item">
+              <p><u>Về</u> Crocs</p>
+              <ul>
+                <li>Giới thiệu về Crocs™</li>
+                <li>Hệ thống cửa hàng</li>
+                <li>Sơ đồ web</li>
+              </ul>
+            </div>
+            <div class="customer__inner-item">
+              <p><u>Hỗ</u> Trợ Khách Hàng</p>
+              <ul>
+                <li>Hướng dẫn tạo tài khoản</li>
+                <li>Hướng dẫn mua hàng</li>
+                <li>Hướng dẫn chọn size</li>
+                <li>Chính sách giao hàng</li>
+                <li>Chính sách đổi trả</li>
+                <li>Chính sách bảo hành</li>
+                <li>Chính sách trả góp</li>
+                <li>Chính sách bảo mật</li>
+                <li>Điều khoản và điều kiện</li>
+                <li>Hỗ trợ và Giải đáp thắc mắc</li>
+              </ul>
+            </div>
+            <div class="customer__inner-item">
+              <p><u>Nh</u>ận Thông Tin Khuyến Mãi</p>
+              <ul>
+                <li>
+                  Đăng ký để cập nhật tin tức về ưu đãi đặc biệt, <br />
+                  chương trình khuyến mãi và nhận ngay voucher
+                  <br />
+                  100.000 VNĐ.
+                </li>
+                <li class="cl4">
+                  <input placeholder="Nhập email của bạn" type="text" />
+                  <i class="fa-regular fa-paper-plane"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="information">
+          <div class="information__inner">
+            <p>
+              Xin lưu ý rằng website này không thuộc sự điều hành hoặc sở hữu
+              bởi Crocs, Inc. hay bất kỳ chi nhánh, công ty con nào khác.
+              Website này được sở hữu và điều hành độc lập bởi
+              <strong>
+                CÔNG TY TNHH MTV THƯƠNG MẠI THỜI TRANG TỔNG HỢP (GTF)</strong
+              >
+              - Nhà phân phối chính thức được ủy quyền bởi Crocs, Inc.
+            </p>
+          </div>
+          <div class="information__inner">
+            <p>
+              <strong
+                >CÔNG TY TNHH MTV THƯƠNG MẠI THỜI TRANG TỔNG HỢP (GTF)</strong
+              >
+              <br />
+              Văn phòng: Số 163, Phan Đăng Lưu, Phường 01, Phú Nhuận, Hồ Chí
+              Minh, Việt Nam <br />
+              Tổng đài: 1900 63 64 01<br />
+              Mã số Doanh Nghiệp: 0314635071, đăng ký thay đổi ngày 20 tháng 04
+              năm 2020
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/js/slide.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/nu.js"></script>
+  </body>
 </html>
